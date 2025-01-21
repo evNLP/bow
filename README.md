@@ -18,7 +18,7 @@ El modelo **BoW** representa un documento como un vector donde:
 - Cada dimensión corresponde a una palabra única del vocabulario del corpus.
 - El valor en cada dimensión es la frecuencia de aparición de esa palabra en el documento.
 
-Matemáticamente, el vector $ \mathbf{v}_d $ de un documento $ d $ se define como:
+Matemáticamente, el vector $\mathbf{v}_d$ de un documento $d$ se define como:
 
 $$
 \mathbf{v}_d[i] = \text{frecuencia de la palabra } w_i \text{ en el documento } d
@@ -44,9 +44,9 @@ $$
 \text{IDF}(w) = \log\left(\frac{N}{\text{número de documentos que contienen } w}\right)
 $$
 
-   Donde $ N $ es el número total de documentos en el corpus.
+   Donde $N$ es el número total de documentos en el corpus.
 
-El valor TF-IDF para una palabra $ w $ en un documento $ d $ se calcula como:
+El valor TF-IDF para una palabra $w$ en un documento $d$ se calcula como:
 
 $$
 \text{TF-IDF}(w, d) = \text{TF}(w, d) \times \text{IDF}(w)
@@ -67,12 +67,12 @@ $$
 $$
 
 Donde:
-- $ \mathbf{v}_a \cdot \mathbf{v}_b $ es el producto escalar.
-- $ \|\mathbf{v}_a\| $ y $ \|\mathbf{v}_b\| $ son las magnitudes de los vectores.
+- $\mathbf{v}_a \cdot \mathbf{v}_b$ es el producto escalar.
+- $\|\mathbf{v}_a\|$ y $\|\mathbf{v}_b\|$ son las magnitudes de los vectores.
 
 Los valores oscilan entre:
-- $ 1 $: Máxima similitud (vectores idénticos).
-- $ 0 $: Sin similitud (vectores ortogonales).
+- $1$: Máxima similitud (vectores idénticos).
+- $0$: Sin similitud (vectores ortogonales).
 
 <br>
 
